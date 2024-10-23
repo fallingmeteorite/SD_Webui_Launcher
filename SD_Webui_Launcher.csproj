@@ -7,22 +7,20 @@
     <LangVersion>10.0</LangVersion>
     <UseWPF>true</UseWPF>
 	  <UseWindowsForms>true</UseWindowsForms>
-    <ApplicationManifest>app.manifest</ApplicationManifest>
-    <ApplicationIcon>Ray_Source.ico</ApplicationIcon>
     <Platforms>AnyCPU;x64</Platforms>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <SignAssembly>False</SignAssembly>
-    <FileVersion>3.0.0.8</FileVersion>
+    <FileVersion>1.0.0</FileVersion>
     <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
-    <Version>3.0.9</Version>
+    <Version>1.0.0</Version>
     <RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
     <RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
     <EnableNETAnalyzers>False</EnableNETAnalyzers>
-    <Authors>Ray_Source光源</Authors>
-    <Company>绘梦</Company>
-    <Product>光源绘梦</Product>
+    <Authors></Authors>
+    <Company></Company>
+    <Product></Product>
     <DelaySign>True</DelaySign>
-    <AssemblyName>Launcher</AssemblyName>
+    <AssemblyName>SD_Webui_Launcher</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -50,10 +48,6 @@
     <EmbeddedResource Remove="imagesource\**" />
     <None Remove="imagesource\**" />
     <Page Remove="imagesource\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Ray_Source.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -122,26 +116,13 @@
     <Resource Include="Assets\applicationIcon-256.png" />
     <Resource Include="img\.net.png" />
     <Resource Include="img\001.png" />
-    <Resource Include="img\002.png" />
-    <Resource Include="img\003.png" />
-    <Resource Include="img\004.png" />
-    <Resource Include="img\005.png" />
-    <Resource Include="img\006.png" />
-    <Resource Include="img\007.png" />
-    <Resource Include="img\008.png" />
-    <Resource Include="img\009.png" />
-    <Resource Include="img\010.png" />
-    <Resource Include="img\011.png" />
-    <Resource Include="img\012.png" />
     <Resource Include="img\backui.png" />
     <Resource Include="img\github.png" />
-    <Resource Include="img\mainlogo.png" />
     <Resource Include="img\Newtonsoft.png" />
     <Resource Include="img\python_logo.jpg" />
     <Resource Include="img\Ray_Source.png" />
     <Resource Include="img\SD启动.png" />
     <Resource Include="img\toolkit.png" />
-    <Resource Include="Ray_Source.png" />
   </ItemGroup>
 
   <ItemGroup>

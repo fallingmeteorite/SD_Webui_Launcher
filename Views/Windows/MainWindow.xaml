@@ -200,7 +200,7 @@
             <ui:TitleBar.Tray>
                 <ui:NotifyIcon
                     FocusOnLeftClick="True"
-                    Icon="pack://application:,,,/Ray_Source.png"
+                    
                     MenuOnRightClick="True"
                     TooltipText="光源绘梦Release Version">
                     <ui:NotifyIcon.Menu>
