@@ -27,7 +27,7 @@
 
 
         <ui:TitleBar
-            Title="光源绘梦Release Version  |  模型详情页"
+            Title="SD_Webui_Launcher"
             Grid.Row="0"
             
             UseSnapLayout="True" >
