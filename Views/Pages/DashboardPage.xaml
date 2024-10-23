@@ -267,26 +267,20 @@
                                 <RadioButton x:Name="最热" Content="最热" Margin="-45,0,0,0" Click="最热_Click" />
                             </StackPanel>
                         </StackPanel>
-                        <!--<TextBlock x:Name="调试" TextWrapping="Wrap" Height="250"></TextBlock>-->
 
                         <StackPanel HorizontalAlignment="Center">
-
                             <WrapPanel   x:Name="模型资源列表" HorizontalAlignment="Left"/>
                             <StackPanel Width="900">
                                 <Button x:Name="加载更多" Content="刷新更多"  Click="加载更多_Click" FontSize="18" HorizontalAlignment="Stretch" Height="35" Width="427"/>
-
-
                             </StackPanel>
                             <StackPanel Margin="0,150,0,0">
                                 <StackPanel Orientation="Horizontal">
                                     <ui:SymbolIcon Symbol="TagQuestionMark32" Width="20" Height="20" FontSize="20"/>
                                     <ui:Hyperlink NavigateUri="https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki" FontSize="14" HorizontalAlignment="Center" Content="获取帮助"/>
-
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal">
                                     <ui:SymbolIcon Symbol="CommentCheckmark24" Width="20" Height="20" FontSize="20"/>
                                     <ui:Hyperlink FontSize="14" NavigateUri="https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues" Content="提供反馈"/>
-
                                 </StackPanel>
                             </StackPanel>
 
@@ -294,23 +288,9 @@
                         </StackPanel>
 
 
-                        <!--<ListBox x:Name="charListBox" Height="250" SelectionChanged="charListBox_SelectionChanged" >
-                <ListBox.ItemsPanel>
-                    <ItemsPanelTemplate>
-                        <WrapPanel Orientation="Horizontal" ></WrapPanel>
-                    </ItemsPanelTemplate>
-
-                </ListBox.ItemsPanel>
-                </ListBox>-->
-
                     </StackPanel>
 
                 </StackPanel>
-                <!--<wv2:WebView2 Name="webView2" ScrollViewer.VerticalScrollBarVisibility="Hidden" 
-                  Source="https://www.aigodlike.com/" ZoomFactor="0.5"
-   />
-       
-        <CheckBox  Content="自动优化" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,25,0,0"/>-->
 
             </Grid>
         </ScrollViewer>
@@ -321,8 +301,6 @@
 
 
         </StackPanel>
-
-
 
     </Grid>
 </ui:UiPage>
