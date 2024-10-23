@@ -47,22 +47,7 @@ namespace Awake.Views.Pages
             {
                 ViewModel = viewModel;
                 InitializeComponent();
-                _imagePaths = new List<string> { "pack://application:,,,/img/001.png",
-                "pack://application:,,,/img/002.png",
-                "pack://application:,,,/img/003.png",
-                "pack://application:,,,/img/004.png",
-                "pack://application:,,,/img/005.png",
-                "pack://application:,,,/img/006.png",
-                "pack://application:,,,/img/007.png",
-                "pack://application:,,,/img/008.png",
-                "pack://application:,,,/img/009.png",
-                "pack://application:,,,/img/010.png",
-                "pack://application:,,,/img/011.png",
-                "pack://application:,,,/img/012.png"
-            };
-                _timer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(5) };
-                _timer.Tick += TimerTick;
-                _timer.Start();
+                _imagePaths = new List<string> {"/img/001.png"};
                 loatmodel(0, "", "[]", 1);
             }
             catch (Exception error)
@@ -71,30 +56,6 @@ namespace Awake.Views.Pages
             }
 
         }
-
-        private void Page_Loaded(object sender, RoutedEventArgs e)
-        {
-            // 随机选择一张图片作为初始的背景  
-            SetRandomImage();
-        }
-
-        private void TimerTick(object sender, EventArgs e)
-        {
-            // 每10秒更换一次背景图片  
-            SetRandomImage();
-        }
-
-        private void SetRandomImage()
-        {
-            if (_imagePaths.Any())
-            {
-                var randomImageIndex = _random.Next(_imagePaths.Count);
-                var randomImagePath = _imagePaths[randomImageIndex];
-                背景图.ImageSource = new BitmapImage(new Uri(randomImagePath));
-            }
-        }
-
-
 
         //异步方法避免阻塞UI线程
         async Task loatmodel(int _modelClass, string _searchName, string _modelType, int _modelPage)
