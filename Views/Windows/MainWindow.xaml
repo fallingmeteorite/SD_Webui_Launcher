@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:pages="clr-namespace:Awake.Views.Pages"
     xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
-    Title="光源AI绘画启动器"
+    Title="SD_Webui_Launcher"
     x:Name="basewindow"
     Width="1200"
     Height="700"
@@ -103,13 +103,6 @@
 
                             </StackPanel>
                         </ui:Card>
-                        <TextBlock VerticalAlignment="Center" Margin="0,5,0,2">UI主题明暗</TextBlock>
-                        <Button x:Name="明暗主体切换"  Grid.Row="2" Width="140" Height="35" VerticalAlignment="Center" Margin="0,0,0,50" Click="明暗切换_Click" HorizontalAlignment="Center"   >
-                            <StackPanel Orientation="Horizontal">
-                                <ui:SymbolIcon Symbol="WeatherSunny16" />
-                                <TextBlock Text= "主题切换"></TextBlock>
-                            </StackPanel>
-                        </Button>
                         <ui:ToggleSwitch x:Name="SD启动" Content="启动特效：SD，启动！" Click="SD启动_Click"/>
 
 
@@ -193,7 +186,7 @@
 
 
         <ui:TitleBar
-            Title="光源绘梦 Release Version |  开源SD盒子，辅助工具&amp;启动器"
+            Title="SD_Webui_Launcher"
             Grid.Row="0"
           
             UseSnapLayout="True">
@@ -224,22 +217,11 @@
                 </RowDefinition>
             </Grid.RowDefinitions>
             <StackPanel Grid.ColumnSpan="2" Margin="0,552,0,0" Grid.RowSpan="2" >
-                <TextBlock x:Name="盒子C1" Text="光源绘梦启动器Release Version (Open-SD-WebUI-Launcher) for Windows10 and later" HorizontalAlignment="Center" FontSize="16" Margin="0,15,0,0"/>
-                <TextBlock x:Name="盒子C2" Text="copy right ©2022-2024 Astro-Artistry-Dev-Team All right reserved" HorizontalAlignment="Center"/>
+                <TextBlock x:Name="盒子C1" Text="(SD-WebUI-Launcher) for Windows10 and later" HorizontalAlignment="Center" FontSize="16" Margin="0,15,0,0"/>
+
             </StackPanel>
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left" Orientation="Horizontal" Grid.ColumnSpan="2" Margin="186,0,0,0">
-                <ui:SymbolIcon Symbol="Group20" FontSize="180" HorizontalAlignment="Left" VerticalAlignment="Top" Opacity="0.99"/>
-                <StackPanel>
-                    <TextBlock FontSize="60" HorizontalAlignment="Center"   FontFamily="Microsoft YaHei"   VerticalAlignment="Center" Margin="0,30,0,0">盒子在手，AI我有!</TextBlock>
-                    <TextBlock FontSize="36" HorizontalAlignment="Center"  Text="用算法雕琢AI世界，与技术一同改变生活"  FontFamily="Microsoft YaHei"   VerticalAlignment="Center"></TextBlock>
-                </StackPanel>
-
-            </StackPanel>
-
-
-
-            <StackPanel Grid.ColumnSpan="2">
-
+                <StackPanel/>
 
             </StackPanel>
         </Grid>
