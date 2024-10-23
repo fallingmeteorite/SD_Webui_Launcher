@@ -17,21 +17,12 @@
     mc:Ignorable="d">
     <Page.Resources>
 
+        <!--Decorate the button style with Lux-->
 
-
-
-
-
-
-
-
-
-        <!--用CSS修饰按钮样式-->
-
-        <Style x:Key="按钮容器样式" TargetType="Border">
+        <Style x:Key="Button container style" TargetType="Border">
 
             <Style.Triggers>
-                <!--鼠标放到按钮上会发生的事情-->
+                <!--What happens when the mouse is placed on the button-->
                 <Trigger Property="IsMouseOver" Value="True">
                     <Setter Property="BorderBrush" Value="#19000000"/>
                     <Setter Property="Background" Value="#0CFFFFFF"/>
@@ -45,10 +36,10 @@
                 </Trigger>
             </Style.Triggers>
         </Style>
-        <Style x:Key="按钮容器样式2" TargetType="Border">
+        <Style x:Key="Button container style 02" TargetType="Border">
 
             <Style.Triggers>
-                <!--鼠标放到按钮上会发生的事情-->
+                <!--What happens when the mouse is placed on the button-->
                 <Trigger Property="IsMouseOver" Value="True">
                     <Setter Property="BorderBrush" Value="#19000000"/>
                     <Setter Property="Background" Value="#0C000000"/>
@@ -88,13 +79,13 @@
                                             ">
                                     <Border x:Name="宣传01" CornerRadius="15" Height="190" Width="920">
                                         <Border.Background >
-                                            <ImageBrush x:Name="背景图"  Stretch="UniformToFill" ImageSource="/img/004.png"/>
+                                            <ImageBrush x:Name="背景图"  Stretch="UniformToFill" ImageSource="/img/001.png"/>
                                         </Border.Background>
 
                                         <Canvas>
                                             <TextBlock Text="AIGODLIKE-开源AI冒险社区" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="627,10,0,0" FontSize="20" Foreground="#FF9A33A5" FontFamily="Alimama ShuHeiTi Bold"/>
 
-                                            <Border CornerRadius="10" Style="{DynamicResource 按钮容器样式2}" Canvas.Left="673" Canvas.Top="113" Width="190" HorizontalAlignment="Left" VerticalAlignment="Top" Height="60" MouseDown="Border_MouseDown" >
+                                            <Border CornerRadius="10" Style="{DynamicResource Button container style 02}" Canvas.Left="673" Canvas.Top="113" Width="190" HorizontalAlignment="Left" VerticalAlignment="Top" Height="60" MouseDown="Border_MouseDown" >
                                                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                                                     <ui:SymbolIcon Symbol="Send20" Foreground="#FF420936" Width="35" Height="35" FontSize="35" Margin="0,0,10,0"/>
                                                     <TextBlock Text="立即挑战" Foreground="#FF420936" FontSize="22" FontFamily="Alimama ShuHeiTi Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
@@ -110,7 +101,7 @@
                                 <StackPanel Orientation="Horizontal"  HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,5">
 
                                     <StackPanel Orientation="Horizontal" Height="140">
-                                        <Border x:Name="统计生成图片数量"   Style="{DynamicResource 按钮容器样式}" CornerRadius="15,0,0,15"  Width="110" Height="140" HorizontalAlignment="Left" Margin="0,0,2,0" MouseDown="统计生成图片数量_MouseDown" VerticalAlignment="Center">
+                                        <Border x:Name="统计生成图片数量"   Style="{DynamicResource Button container style}" CornerRadius="15,0,0,15"  Width="110" Height="140" HorizontalAlignment="Left" Margin="0,0,2,0" MouseDown="统计生成图片数量_MouseDown" VerticalAlignment="Center">
                                             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
                                                 <ui:SymbolIcon Symbol="ImageMultiple32" FontSize="30" Width="30" Height="30"/>
 
@@ -123,7 +114,7 @@
                                         </Border>
 
                                         <StackPanel>
-                                            <Border x:Name="打开文生图文件夹"   Style="{DynamicResource 按钮容器样式}" CornerRadius="0,15,0,0"  Width="184" Height="69" HorizontalAlignment="Left" MouseDown="打开文生图文件夹_MouseDown">
+                                            <Border x:Name="打开文生图文件夹"   Style="{DynamicResource Button container style}" CornerRadius="0,15,0,0"  Width="184" Height="69" HorizontalAlignment="Left" MouseDown="打开文生图文件夹_MouseDown">
                                                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                                                     <ui:SymbolIcon Symbol="ImageAltText24" Width="35" Height="35" FontSize="35" Margin="0,0,5,0"/>
                                                     <StackPanel Width="90">
@@ -136,7 +127,7 @@
                                                 </StackPanel>
 
                                             </Border>
-                                            <Border x:Name="打开图生图文件夹"   Style="{DynamicResource 按钮容器样式}" CornerRadius="0,0,15,0"  Width="184" Height="69" HorizontalAlignment="Left" MouseDown="打开图生图文件夹_MouseDown" Margin="0,2,0,0">
+                                            <Border x:Name="打开图生图文件夹"   Style="{DynamicResource Button container style}" CornerRadius="0,0,15,0"  Width="184" Height="69" HorizontalAlignment="Left" MouseDown="打开图生图文件夹_MouseDown" Margin="0,2,0,0">
                                                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                                                     <ui:SymbolIcon Symbol="ImageAdd24" Width="35" Height="35" Margin="0,0,5,0" FontSize="35"/>
                                                     <StackPanel Width="90">
@@ -151,7 +142,7 @@
                                     </StackPanel>
 
                                     <StackPanel Orientation="Horizontal" Height="140" Margin="16,0,0,0">
-                                        <Border x:Name="打开WebUI文件夹"   Style="{DynamicResource 按钮容器样式}" CornerRadius="15,0,0,15"  Width="110" Height="140" MouseDown="打开WebUI文件夹_MouseDown" Margin="0,0,2,0" VerticalAlignment="Center">
+                                        <Border x:Name="打开WebUI文件夹"   Style="{DynamicResource Button container style}" CornerRadius="15,0,0,15"  Width="110" Height="140" MouseDown="打开WebUI文件夹_MouseDown" Margin="0,0,2,0" VerticalAlignment="Center">
 
                                             <StackPanel VerticalAlignment="Center">
                                                 <TextBlock Text="&#xF89A;" FontFamily="Segoe MDL2 Assets" Width="30" Height="30" FontSize="30"/>
@@ -163,7 +154,7 @@
 
                                         </Border>
                                         <StackPanel>
-                                            <Border x:Name="打开SD模型文件夹"   Style="{DynamicResource 按钮容器样式}" CornerRadius="0,15,0,0"  Width="184" Height="69" MouseDown="打开SD模型文件夹_MouseDown">
+                                            <Border x:Name="打开SD模型文件夹"   Style="{DynamicResource Button container style}" CornerRadius="0,15,0,0"  Width="184" Height="69" MouseDown="打开SD模型文件夹_MouseDown">
                                                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                                                     <ui:SymbolIcon Symbol="Pair20" Width="35" Height="35" FontSize="35" Margin="0,0,5,0"/>
 
@@ -174,7 +165,7 @@
                                                     <ui:SymbolIcon Symbol="Share16" FontSize="30" HorizontalAlignment="Center" Canvas.Left="55" Canvas.Top="100" VerticalAlignment="Center"/>
                                                 </StackPanel>
                                             </Border>
-                                            <Border x:Name="打开lora模型文件夹"   Style="{DynamicResource 按钮容器样式}" CornerRadius="0,0,15,0"  Width="184" Height="69" MouseDown="打开lora模型文件夹_MouseDown" Margin="0,2,0,0">
+                                            <Border x:Name="打开lora模型文件夹"   Style="{DynamicResource Button container style}" CornerRadius="0,0,15,0"  Width="184" Height="69" MouseDown="打开lora模型文件夹_MouseDown" Margin="0,2,0,0">
 
                                                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                                                     <ui:SymbolIcon Symbol="PlugConnectedAdd20" Width="35" Height="35" FontSize="35" Margin="0,0,5,0"/>
@@ -195,7 +186,7 @@
                                     </StackPanel>
                                     <StackPanel Orientation="Horizontal" Margin="16,0,0,0">
                                         <StackPanel Height="140">
-                                            <Border x:Name="打开VAE模型文件夹"   Style="{DynamicResource 按钮容器样式}" CornerRadius="15,0,0,0"  Width="147" Height="69" MouseDown="打开VAE模型文件夹_MouseDown">
+                                            <Border x:Name="打开VAE模型文件夹"   Style="{DynamicResource Button container style}" CornerRadius="15,0,0,0"  Width="147" Height="69" MouseDown="打开VAE模型文件夹_MouseDown">
                                                 <StackPanel VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Center">
                                                     <ui:SymbolIcon Symbol="DatabasePlugConnected20" Width="30" Height="30" Margin="0,0,5,0" FontSize="30"/>
                                                     <StackPanel Width="90">
@@ -206,7 +197,7 @@
 
                                                 </StackPanel>
                                             </Border>
-                                            <Border x:Name="打开EMB模型文件夹"   Style="{DynamicResource 按钮容器样式}" CornerRadius="0,0,0,15"  Width="147" Height="69" MouseDown="打开EMB模型文件夹_MouseDown" Margin="0,2,0,0">
+                                            <Border x:Name="打开EMB模型文件夹"   Style="{DynamicResource Button container style}" CornerRadius="0,0,0,15"  Width="147" Height="69" MouseDown="打开EMB模型文件夹_MouseDown" Margin="0,2,0,0">
                                                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                                                     <ui:SymbolIcon Symbol="GridKanban20" Width="30" Height="30" Margin="0,0,5,0" FontSize="30"/>
                                                     <StackPanel Width="90">
@@ -219,7 +210,7 @@
                                             </Border>
                                         </StackPanel>
                                         <StackPanel HorizontalAlignment="Center" Margin="2,0,0,0">
-                                            <Border x:Name="打开HYP模型文件夹"   Style="{DynamicResource 按钮容器样式}" CornerRadius="0,15,0,0"  Width="147" Height="69" MouseDown="打开HYP模型文件夹_MouseDown">
+                                            <Border x:Name="打开HYP模型文件夹"   Style="{DynamicResource Button container style}" CornerRadius="0,15,0,0"  Width="147" Height="69" MouseDown="打开HYP模型文件夹_MouseDown">
                                                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
                                                     <ui:SymbolIcon Symbol="Connected20" Width="30" Height="30" Margin="0,0,5,0" FontSize="30"/>
                                                     <StackPanel VerticalAlignment="Center" Width="90">
@@ -230,7 +221,7 @@
 
                                                 </StackPanel>
                                             </Border>
-                                            <Border x:Name="打开扩展模型文件夹"   Style="{DynamicResource 按钮容器样式}" CornerRadius="0,0,15,0"  Width="147" Height="69" MouseDown="打开扩展模型文件夹_MouseDown" Margin="0,2,0,0">
+                                            <Border x:Name="打开扩展模型文件夹"   Style="{DynamicResource Button container style}" CornerRadius="0,0,15,0"  Width="147" Height="69" MouseDown="打开扩展模型文件夹_MouseDown" Margin="0,2,0,0">
                                                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                                                     <ui:SymbolIcon Symbol="ExtendedDock20" Width="30" Height="30" FontSize="30" Margin="0,0,5,0"/>
                                                     <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="90">
